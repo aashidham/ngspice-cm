@@ -1,0 +1,24 @@
+te
+
+.control
+tran 50us 200ms
+plot v(cell_bus)
+plot vcell#branch
+plot vcell2#branch
+.endc
+
+i1 0 v_cell_bus pulse(      0         8e-10      25ms       1ms        1ms        25ms  100ms)
+vcell v_cell_bus cell_bus 0
+rsafe cell_bus 0 1e10
+vcell2 out 0 0
+
+amen cell_bus out memr
+amen2 cell_bus out memr2
+amen3 cell_bus out memr2
+*amen4 cell_bus out memr2
+*amen5 cell_bus out memr2
+*amen6 cell_bus out memr2
+
+.model memr hh (area=1e-4)
+.model memr2 hh (area=1e-13)
+

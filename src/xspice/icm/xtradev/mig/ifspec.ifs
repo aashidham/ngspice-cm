@@ -1,0 +1,27 @@
+NAME_TABLE:
+
+Spice_Model_Name:      mig
+C_Function_Name:       cm_mig
+Description:           "Migliore"
+
+PORT_TABLE:
+
+Port_Name:    cap
+Description:  "neuron terminals"
+Direction:   inout
+Default_Type:   gd
+Allowed_Types:  [gd]
+Vector:    no
+Vector_Bounds:  -
+Null_Allowed:  no
+
+PARAMETER_TABLE:
+
+Parameter_Name: area
+Description: "area"
+Data_Type:real
+Default_Value:-
+Limits:-
+Vector:no
+Vector_Bounds:-
+Null_Allowed:no   

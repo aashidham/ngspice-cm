@@ -1,0 +1,4 @@
+tran 50us 500ms
+plot v(electrode_bus)
+plot v(cell_bus)
+options RELTOL=.01
